@@ -33,6 +33,7 @@ router.post('/', [
         return res.status(400).json({ msg: 'User already exists' });
       }
       user = new User({
+        //ES6 permits creating attributes that will have the same name as value to forgo the "name = name" syntax
         name,
         email,
         password
