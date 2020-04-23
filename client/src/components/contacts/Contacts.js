@@ -22,7 +22,7 @@ const Contacts = () => {
   return (
     <Fragment>
       {contacts !== null && !loading ? (
-        <TransitionGroup>>
+        <TransitionGroup>
           {filtered !== null
             ? filtered.map(contact => (
               <CSSTransition
