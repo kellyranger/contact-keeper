@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import Contacts from '../contacts/Contacts';
 import ContactForm from '../contacts/ContactForm';
 import ContactFilter from '../contacts/ContactFilter';
+// eslint-disable-next-line
 import AuthContext from '../../context/auth/authContext';
 
 
@@ -10,7 +11,7 @@ const Home = () => {
 
   useEffect(() => {
     authContext.loadUser();
-    //eslint-diable-next-line
+    // eslint-diable-next-line
   }, []);
 
   return (
